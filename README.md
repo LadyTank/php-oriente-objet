@@ -15,5 +15,7 @@ Création d'un blog
     *date de publication
     *url
 
+- Attribuer une valeur d'exemple aux propriété titre, contenu et date de publication
+
 
 ### FAIT

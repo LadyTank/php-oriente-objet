@@ -1,4 +1,7 @@
 <?php 
+
+namespace Outils;
+
 /**
  * Class de débug
  * @author Ladytank

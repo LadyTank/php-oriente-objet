@@ -1,6 +1,9 @@
 <?php require('class/Autoloader.php'); // va appeler toutes class du dossier class
+// require('class/Debug.php');
 Autoloader::register();
-require_once('class/functions.php'); ?>
+use Outils\Debug;
+
+require_once('inc/functions.php'); ?>
 <!doctype html>
 <html lang="fr">
 
@@ -54,8 +57,12 @@ require_once('class/functions.php'); ?>
                     $article1 = new Article('PHP trop cool', 'J\'apprend le PHP avec Régis', '13/04/2021');
 
                     $article1->info();
+                    // via set je modifie la date de publication qui est propriétée (variable dans class) privée
+                    $article1->setDatePublication("23-05-1998");
 
                     jevar_dump($article1);
+                    //  le namespace Outils sert à classer de manière plus précise les class. dans le cas de travail avec des collaborateurs, si des class ont le meme nom, les names spaces aideront à les différencier
+                    Debug::afficherTableau($article1);
 
                     ?>
 
@@ -98,6 +105,10 @@ require_once('class/functions.php'); ?>
             </div><!-- fin col -->
 
             <div class="col-sm-12 col-md-6">
+
+                <?php
+                $article = new Article()
+                ?>
 
             </div><!-- fin col -->
 

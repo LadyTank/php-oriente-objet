@@ -3,17 +3,25 @@
 class Page extends Article
 {
 
-    public $url;
+    private ?string $url;
 
     public function __construct($titre, $contenu, $datePublication, $url)
     {
 
-        parent::__construct($titre, $contenu, $datePublication);
+        // parent::__construct($titre, $contenu, $datePublication);
+        $this->titre = $titre;
+        $this->contenu = $contenu;
+        $this->datePublication = $datePublication;
 
         $this->url = $url;
     }
 
     public function info() {
-        echo "Le titre de cette page est \" $this->titre \"<br>  Son contenu est \"$this->contenu\"<br> Date de publication est \"$this->datePublication\"<br>  Son lien url est \"$this->url\"";
+        echo "<article>
+        <h2>$this->titre</h2>
+        <p>$this->contenu</p>
+        <time datetime=\"\">$this->datePublication</time>
+        <p>$this->url</p>
+        </article>";
     }
 }
