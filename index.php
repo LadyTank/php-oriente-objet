@@ -1,6 +1,7 @@
 <?php require('class/Autoloader.php'); // va appeler toutes class du dossier class
 // require('class/Debug.php');
 Autoloader::register();
+// appel de la class debug dans le namespace outils
 use Outils\Debug;
 
 require_once('inc/functions.php'); ?>
@@ -18,8 +19,6 @@ require_once('inc/functions.php'); ?>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
 
     <title>Cours PHP 7 - </title>
 
