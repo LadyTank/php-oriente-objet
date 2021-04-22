@@ -1,0 +1,22 @@
+SYMFONY = kernel + composants
+
+C'est un framework PHP (cadriciel), une boîte à outils logicielle.
+CRUD (Create / Read / Update / Delete)
+
+SYMFONY va servir à accélérer/faciliter le développement d'applications PHP.
+C'est une boite à outil très complète qui entrecroise plusieurs compétences. 
+Un ensemble de composants (components) dont le coeur s'appelle "Kernel" = noyau.
+-> on peut installer uniquement le kernel mais son fonctionnement sera limité, il lui faudra d'autres composants.
+
+* Logiciel libre créée en 2009 par Fabien Potencier,
+* Actuellement à la v.5.2
+
+LES COMPOSANTS
+- doctrine : va gérer la base de donnée, un ORM (object Relation Manager) -> dans l'appli SYMFONY on ne connait que l'ORM.
+- twig : va servir à faire des templates (gabarit) HTML.
+- monolog : outils pour gérer les journaux de logiciels (historique, journaux d'utilisation).
+- API : une API est comme un CRUD mais en lien avec URL. ça sert à créer une architecture pour que le dev front puisse accéder à ses données.
+
+On peut utiliser chacuns de ces composants séparemment.
+Ces composants sont installés avec un outils PHP -> composer
+///////// COMPOSER REQUIRE DOCTRINE //////////
