@@ -14,13 +14,13 @@ class Article
 
         $this->titre = $t;
         $this->contenu = $c;
-        $this->datePublication=$p;
-
+        $this->datePublication = $p;
     }
 
-    public function info() {
+    public function info()
+    {
 
-        setlocale(LC_TIME, ['fr','fra','fr_FR']); 
+        setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);
         date_default_timezone_set('Europe/Paris');
         // va afficher la date du jour A REGLER
         $date = utf8_encode(strftime('%A %d %B %Y'));
@@ -34,7 +34,7 @@ class Article
 
     /**
      * Get the value of datePublication
-     */ 
+     */
     public function getDatePublication()
     {
         return $this->datePublication;
@@ -44,7 +44,7 @@ class Article
      * Set the value of datePublication
      *
      * @return  self
-     */ 
+     */
     public function setDatePublication($datePublication)
     {
         $this->datePublication = $datePublication;
@@ -54,7 +54,7 @@ class Article
 
     /**
      * Get the value of contenu
-     */ 
+     */
     public function getContenu()
     {
         return $this->contenu;
@@ -64,7 +64,7 @@ class Article
      * Set the value of contenu
      *
      * @return  self
-     */ 
+     */
     public function setContenu($contenu)
     {
         $this->contenu = $contenu;
@@ -74,7 +74,7 @@ class Article
 
     /**
      * Get the value of titre
-     */ 
+     */
     public function getTitre()
     {
         return $this->titre;
@@ -84,7 +84,7 @@ class Article
      * Set the value of titre
      *
      * @return  self
-     */ 
+     */
     public function setTitre($titre)
     {
         $this->titre = $titre;

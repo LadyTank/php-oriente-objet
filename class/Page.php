@@ -16,7 +16,8 @@ class Page extends Article
         $this->url = $url;
     }
 
-    public function info() {
+    public function info()
+    {
         echo "<article>
         <h2>$this->titre</h2>
         <p>$this->contenu</p>

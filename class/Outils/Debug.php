@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Outils;
 
@@ -54,8 +54,5 @@ class Debug
         echo "<br><small class=\"bg-success text-white\">... get_object_vars </small><pre class=\"alert alert-success w-75\">";
         print_r(get_object_vars($monObjet));
         echo "</pre>";
-
     }
-
 }
-
